@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://ctrqji2ie3jmm"]
+
+[ext_resource type="Texture2D" uid="uid://bmce54ass5eqv" path="res://Animated Coins.png" id="1_wltir"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fyly4"]
+radius = 750.9847
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jiowd"]
+atlas = ExtResource("1_wltir")
+region = Rect2(0, 0, 15, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2x7xp"]
+atlas = ExtResource("1_wltir")
+region = Rect2(16, 0, 15, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_80516"]
+atlas = ExtResource("1_wltir")
+region = Rect2(32, 0, 15, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jqaj3"]
+atlas = ExtResource("1_wltir")
+region = Rect2(48, 0, 15, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y03ms"]
+atlas = ExtResource("1_wltir")
+region = Rect2(64, 0, 15, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pkoub"]
+atlas = ExtResource("1_wltir")
+region = Rect2(80, 0, 15, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5uugg"]
+atlas = ExtResource("1_wltir")
+region = Rect2(96, 0, 15, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bayp2"]
+atlas = ExtResource("1_wltir")
+region = Rect2(112, 0, 15, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vetgx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jiowd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2x7xp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_80516")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jqaj3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y03ms")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pkoub")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5uugg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bayp2")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=1039174755]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=901043162]
+position = Vector2(618, 306)
+shape = SubResource("CircleShape2D_fyly4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=367602493]
+position = Vector2(690, 299)
+scale = Vector2(15.18334, 12.71875)
+sprite_frames = SubResource("SpriteFrames_vetgx")
+frame_progress = 0.3315609
