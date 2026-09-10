@@ -80,3 +80,6 @@ position = Vector2(690, 299)
 scale = Vector2(15.18334, 12.71875)
 sprite_frames = SubResource("SpriteFrames_vetgx")
 frame_progress = 0.3315609
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1601128632]
+autoplay = true
