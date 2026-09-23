@@ -1,6 +1,6 @@
 extends Control
 
-var coin: int 
+var coin: int = 10
 @onready var coin_label: Label = $CoinLabel
 #Node $CoinLabel
 
@@ -19,9 +19,13 @@ func _on_button_down():
 	# Add coin
 	# when clicker is clicked, add 10 coins
 	#coin += 10
-	print("this worked")
+	#print("this worked")
 	coin += $ClickerButton.clicker_strength # can also do coin += 10
 	
 	# Update UI
 	coin_label.text = "Coin: " + str(coin)
 	print(coin)
+
+
+func _on_clicker_button_clicked(amount: int) -> void:
+	pass # Replace with function body.

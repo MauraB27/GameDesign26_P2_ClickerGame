@@ -23,3 +23,7 @@ offset_top = 370.616
 offset_right = 608.72
 offset_bottom = 418.616
 text = "Upgrade"
+
+[connection signal="clicked" from="." to="." method="_on_clicked"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="pressed" from="UpgradeButton" to="." method="_on_upgrade_button_pressed"]

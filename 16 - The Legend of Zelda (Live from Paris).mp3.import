@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dvac8gbjytxx0"
+path="res://.godot/imported/16 - The Legend of Zelda (Live from Paris).mp3-f2cb30246efe68e4b434f252b42732d3.mp3str"
+
+[deps]
+
+source_file="res://16 - The Legend of Zelda (Live from Paris).mp3"
+dest_files=["res://.godot/imported/16 - The Legend of Zelda (Live from Paris).mp3-f2cb30246efe68e4b434f252b42732d3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

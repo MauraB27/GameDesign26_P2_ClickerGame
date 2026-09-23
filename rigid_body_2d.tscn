@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://ctrqji2ie3jmm"]
 
+[ext_resource type="Script" uid="uid://dnqjh06wlacsd" path="res://rigid_body_2d.gd" id="1_jiowd"]
 [ext_resource type="Texture2D" uid="uid://bmce54ass5eqv" path="res://Animated Coins.png" id="1_wltir"]
+[ext_resource type="AudioStream" uid="uid://dvac8gbjytxx0" path="res://16 - The Legend of Zelda (Live from Paris).mp3" id="3_2x7xp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fyly4"]
 radius = 750.9847
@@ -70,6 +72,7 @@ animations = [{
 }]
 
 [node name="RigidBody2D" type="RigidBody2D" unique_id=1039174755]
+script = ExtResource("1_jiowd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=901043162]
 position = Vector2(618, 306)
@@ -79,7 +82,16 @@ shape = SubResource("CircleShape2D_fyly4")
 position = Vector2(690, 299)
 scale = Vector2(15.18334, 12.71875)
 sprite_frames = SubResource("SpriteFrames_vetgx")
-frame_progress = 0.3315609
+autoplay = "default"
+frame_progress = 0.8085501
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1246524011]
+position = Vector2(680, 302)
+scale = Vector2(15.18334, 12.71875)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1601128632]
+stream = ExtResource("3_2x7xp")
+volume_db = 7.583
 autoplay = true
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

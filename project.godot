@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="P2 Styled Clicker"
+run/main_scene="uid://bb3p1nvmabs5x"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout=""
 
 [display]
 

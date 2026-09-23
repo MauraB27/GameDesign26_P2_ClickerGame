@@ -2,16 +2,26 @@
 
 [ext_resource type="Script" uid="uid://che5mh73w5t4y" path="res://game_manager.gd" id="1_7o08m"]
 [ext_resource type="PackedScene" uid="uid://cdk6uy7pd7v84" path="res://clicker_button.tscn" id="2_7o08m"]
+[ext_resource type="Texture2D" uid="uid://corludrblx7h1" path="res://forest-water-light-reflection-wallpaper-thumb.jpg" id="3_k15wb"]
+
+[sub_resource type="FontVariation" id="FontVariation_ybgqn"]
+
+[sub_resource type="Theme" id="Theme_k15wb"]
+default_base_scale = 0.63
+default_font = SubResource("FontVariation_ybgqn")
 
 [node name="Game" type="Control" unique_id=388719549]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1.0
-offset_right = 1.0
+offset_left = 13.0
+offset_top = 8.0
+offset_right = 13.0
+offset_bottom = 8.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource("Theme_k15wb")
 script = ExtResource("1_7o08m")
 
 [node name="CoinLabel" type="Label" parent="." unique_id=127428167]
@@ -21,17 +31,25 @@ anchor_left = -0.393
 anchor_top = -0.33
 anchor_right = -0.393
 anchor_bottom = -0.33
-offset_left = 662.736
-offset_top = 278.84003
-offset_right = 763.736
-offset_bottom = 325.732
+offset_left = 698.736
+offset_top = 280.84003
+offset_right = 799.736
+offset_bottom = 327.732
 text = "Coin: 0"
 
-[node name="ClickerButton" parent="." unique_id=942805225 instance=ExtResource("2_7o08m")]
+[node name="ClickerButton" parent="." unique_id=942805225 node_paths=PackedStringArray("game_manager") instance=ExtResource("2_7o08m")]
 layout_mode = 0
-offset_left = 0.0
-offset_top = 0.0
-offset_right = 140.0
-offset_bottom = 142.0
+offset_left = 92.0
+offset_top = 13.0
+offset_right = 232.0
+offset_bottom = 155.0
+game_manager = NodePath("..")
 
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1586796384]
+z_index = -1
+position = Vector2(563, 307.00003)
+scale = Vector2(2.3314517, 2.046774)
+texture = ExtResource("3_k15wb")
+
+[connection signal="clicked" from="ClickerButton" to="." method="_on_clicker_button_clicked"]
 [connection signal="pressed" from="ClickerButton" to="." method="_on_button_down"]
