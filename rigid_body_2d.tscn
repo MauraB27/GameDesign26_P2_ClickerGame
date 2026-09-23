@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dnqjh06wlacsd" path="res://rigid_body_2d.gd" id="1_jiowd"]
 [ext_resource type="Texture2D" uid="uid://bmce54ass5eqv" path="res://Animated Coins.png" id="1_wltir"]
-[ext_resource type="AudioStream" uid="uid://dvac8gbjytxx0" path="res://16 - The Legend of Zelda (Live from Paris).mp3" id="3_2x7xp"]
+[ext_resource type="AudioStream" uid="uid://c2gh73fba64is" path="res://chieuk-coin-257878.mp3" id="3_2x7xp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fyly4"]
 radius = 750.9847

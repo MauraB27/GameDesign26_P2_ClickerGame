@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://boogfnnsfwc3k"]
+
+[ext_resource type="Script" uid="uid://b1d6yh1ggo0gd" path="res://generator.gd" id="1_r36sx"]
+[ext_resource type="Texture2D" uid="uid://dnpan2tkrnx7e" path="res://images.png" id="1_yybav"]
+
+[node name="Generator" type="Control" unique_id=1978889686]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r36sx")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=147001352]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_yybav")
+
+[node name="UpgradeButton2" type="Button" parent="." unique_id=1703952316]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Timer" type="Timer" parent="." unique_id=1533283530]
+autostart = true
+
+[connection signal="pressed" from="UpgradeButton2" to="." method="_on_upgrade_button_2_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
