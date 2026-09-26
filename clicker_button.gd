@@ -21,7 +21,7 @@ func _on_upgrade_button_pressed() -> void:
 		clicker_strength *= 2
 	
 	#make the player pay for upgrading
-		clicked.emit(-cost)
+		game_manager.coin -= cost
 
 
 func _on_pressed() -> void:

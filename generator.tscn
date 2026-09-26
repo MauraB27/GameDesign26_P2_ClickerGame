@@ -14,8 +14,10 @@ script = ExtResource("1_r36sx")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=147001352]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 719.0
+offset_top = 182.0
+offset_right = 1166.0
+offset_bottom = 629.0
 texture = ExtResource("1_yybav")
 
 [node name="UpgradeButton2" type="Button" parent="." unique_id=1703952316]
