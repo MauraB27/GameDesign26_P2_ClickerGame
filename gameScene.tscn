@@ -51,5 +51,4 @@ position = Vector2(563, 307.00003)
 scale = Vector2(2.3314517, 2.046774)
 texture = ExtResource("3_k15wb")
 
-[connection signal="clicked" from="ClickerButton" to="." method="_on_clicker_button_clicked"]
-[connection signal="pressed" from="ClickerButton" to="." method="_on_button_down"]
+[connection signal="coin_generated" from="ClickerButton" to="." method="_on_clicker_button_coin_generated"]
