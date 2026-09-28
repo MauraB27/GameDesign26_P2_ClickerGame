@@ -12,3 +12,9 @@
 - coin music for game juice
 - generator icon of a samurai
 - calming music playing the entire game (did not implement this yet due to time contsraints)
+
+
+Game Link: 
+https://sunsett556.itch.io/clicker-game-p2
+
+Password: Samurai2027
